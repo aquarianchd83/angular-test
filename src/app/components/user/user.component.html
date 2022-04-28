@@ -1,0 +1,111 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="mb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="user.name" placeholder="Enter Name">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="mb-3">
+                <label for="username"> User Name</label>
+                <input type="text" class="form-control" id="username" [(ngModel)]="user.username"
+                    placeholder="Enter User Name">
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="mb-3">
+                <label for="email"> Email</label>
+                <input type="text" class="form-control" id="email" [(ngModel)]="user.email" placeholder="Enter Email">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="mb-3">
+                <label for="phone"> Phone</label>
+                <input type="text" class="form-control" id="phone" [(ngModel)]="user.phone" placeholder="Enter Phone">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="mb-3">
+                <label for="website"> Website</label>
+                <input type="text" class="form-control" id="website" [(ngModel)]="user.website"
+                    placeholder="Enter Website">
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <div class="jumbotron p-4">
+                <h6 class="mb-4">Company</h6>
+                <section>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="name">name</label>
+                        <input type="text" class="form-control" id="name" [(ngModel)]="user.company.name">
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="catchPhrase">catchPhrase</label>
+                        <input type="text" class="form-control" id="catchPhrase" [(ngModel)]="user.company.catchPhrase">
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="bs">bs</label>
+                        <input type="text" class="form-control" id="bs" [(ngModel)]="user.company.bs">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="jumbotron p-4">
+                <h6 class="mb-4">Address</h6>
+                <section>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="street">street</label>
+                        <input type="text" class="form-control" id="street" [(ngModel)]="user.address.street">
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="suite">suite</label>
+                        <input type="text" class="form-control" id="suite" [(ngModel)]="user.address.suite">
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="city">city</label>
+                        <input type="text" class="form-control" id="city" [(ngModel)]="user.address.city">
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="zipcode">zipcode</label>
+                        <input type="text" class="form-control" id="zipcode" [(ngModel)]="user.address.zipcode">
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="zipcode">geo</label>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="mb-3 d-flex flex-column">
+                                    <label for="lat">lat</label>
+                                    <input type="text" class="form-control" id="lat" [(ngModel)]="user.address.geo.lat">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="mb-3 d-flex flex-column">
+                                    <label for="lng">lng</label>
+                                    <input type="text" class="form-control" id="lng" [(ngModel)]="user.address.geo.lng">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12 text-center mt-4">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+
+</div>

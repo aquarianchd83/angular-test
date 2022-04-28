@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">UserName</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="users.length>0">
+      <tr  *ngFor="let user of users;">
+        <th >{{user.name}}</th>
+        <th >{{user.username}}</th>
+        <th >{{user.email}}</th>
+        <th >{{user.phone}}</th>
+        <th >{{user.website}}</th>
+        <th >
+          <button class="btn btn-primary"  (click)="onEdit(user.id)">Edit</button>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+
+

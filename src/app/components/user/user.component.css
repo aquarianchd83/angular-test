@@ -1,0 +1,8 @@
+.jumbotron label{
+    min-width: 120px;
+    text-transform: capitalize;
+}
+
+.jumbotron{
+    background: #eee;
+}
